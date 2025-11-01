@@ -9,7 +9,9 @@ function App() {
   return (
     <>
       <div>
-      DUEN Fall '25 Project Website
+        <h1 class="text-3xl font-bold underline">
+        DUEN Fall '25 Project Website
+        </h1>
       </div>
     </>
   )
