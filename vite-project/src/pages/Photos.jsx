@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import img1 from "../assets/code.png";
 import img2 from "../assets/prototyping.png";
 import img3 from "../assets/quality.png";
-import img4 from "../assets/quality.png";
+import img4 from "../assets/testing.png";
 
 const timeline = [
   { date: "Week 1", 
@@ -12,13 +12,13 @@ const timeline = [
     description: "Ryan is working on creating the toggle functionality for the rigged push button on TinkerCAD. The Raspberry Pi wasn’t here so he started with the Arduino." 
 },
   { date: "Week 2", image: img2, title: "Prototyping", description: "Nik and Ben drafting a rough prototype drawing of a rack and pinion mechanism to drive the cart out of the tabling assistant (AKA Project Adam)" },
-  { date: "Week 2", image: img3, title: "National Recognition", description: "Atharva is putting together the chassis to check the concentricity of the fixtures that keep our structure together." },
+  { date: "Week 2", image: img3, title: "Quality Control", description: "Atharva is putting together the chassis to check the concentricity of the fixtures that keep our structure together." },
   {
-    date: "Summer 2024",
-    title: "Final Presentation",
+    date: "Week 3",
+    title: "Testing Code",
     description:
-      "We presented our final design to faculty and industry partners — marking a major milestone for the team!",
-    image: img3,
+      "Adam is finalizing the tray motor code and implementing the code for the gate and wheel motors. He is soldering and testing all 3 motors and prototyping the solderless breadboard.",
+    image: img4,
   },
 ];
 

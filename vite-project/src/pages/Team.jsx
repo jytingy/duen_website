@@ -18,24 +18,25 @@ import img16 from '../assets/ethan.jpg';
 import img17 from './blankPFP.jpg';
 import img18 from '../assets/kenneth.jpg';
 import img19 from './blankPFP.jpg';
-import img20 from '../assets/etienne.webp';
+import img20 from '../assets/ben.webp';
 import img21 from '../assets/jeff.webp';
-import img22 from '../assets/hanna.webp';
-import img23 from '../assets/hadi.webp';
-import img24 from '../assets/nickx.webp';
-import img25 from '../assets/etienne.webp';
-import img26 from '../assets/cindy.webp';
-import img27 from '../assets/hanna.webp';
-import img28 from '../assets/hadi.webp';
-import img29 from '../assets/nickx.webp';
+import img22 from '../assets/lianne.webp';
+import img23 from '../assets/jj.webp';
+import img24 from '../assets/ian.webp';
+import img25 from '../assets/lorenzo.webp';
+import img26 from '../assets/seshu.webp';
+import img27 from '../assets/etienne.webp';
+import img28 from '../assets/cindy.webp';
+import img29 from '../assets/hanna.webp';
 import img30 from '../assets/hadi.webp';
 import img31 from '../assets/nickx.webp';
 
 import peekingSmiski from '../assets/smiskis/peeking.png';
-
+import workingSmiski from '../assets/smiskis/working.png';
 import Intern from "../components/Intern";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import BackToTopButton from '../components/BackToTopButton';
 
 function Team() {
     return (
@@ -64,13 +65,14 @@ function Team() {
     alt="smiski" 
     className="absolute bottom-0 z-20 h-[80px] w-auto object-contain" 
   />
+
 </div>
 
 
 
 
     {/* Intern grid */}
-    <div className="flex flex-col items-start gap-6 p-4 sm:p-[50px_20px] self-stretch">
+    <div className="relative flex flex-col items-start gap-6 p-4 sm:p-[50px_20px] self-stretch">
 
     {/* Computer Vision */}
     <div className="flex flex-col items-center gap-4 sm:gap-[10px] self-stretch">
@@ -123,7 +125,12 @@ function Team() {
           Mechanical
         </h1>
         <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal">
-          DESCRIPTION
+          
+      The Mechanical Team was responsible for constructing the design and fabrication of our tabling machine. 
+      Our team uses CAD (Computer-Aided Design) software to create all structural components including the chassis, motorized spinner, gate, and tray mechanisms. 
+      Once the spinner lands on the flyer, a motorized gate will open to allow a tray to extend out of our structure with a flyer. 
+      The Mechanical team worked to create a functional and durable system for tabling. 
+      Through prototyping and testing, the team created a mechanically reliable machine suitable for engaging students and by-passers. 
         </p>
       </div>
 
@@ -142,7 +149,12 @@ function Team() {
           Electrical
         </h1>
         <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal">
-          DESCRIPTION
+          The Electrical team was responsible for programming and coding all electronics in all the parts we needed. 
+          They created the circuit designer pin out with parts including raspberry pi, stepper motors, wiring, motor drivers, etc. 
+          The team created a rough diagram to make a powering schematic with all the parts. 
+          They also created the code for the motor movements and soldered wires for testing the motors.
+           They calibrated all the motors to perform the functions of lifting the gate, spinning the wheel, and ejecting the tray. 
+           Along with the reverse operations for the gate and tray. 
         </p>
       </div>
 
@@ -183,7 +195,10 @@ function Team() {
           Construction Helpers
         </h1>
         <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal">
-          DESCRIPTION
+          Our Construction helpers were a crucial part of our construction project coming together. 
+          They assisted our team in aspects such as quality control, CAD, fabrication, measurements, and more. 
+          Our design, development, and implementation was enhanced with their help. 
+          Their feedback and mentorship support helped ensure our final design worked smoothly.
         </p>
       </div>
 
@@ -216,12 +231,20 @@ function Team() {
         <Intern image={img30} name="Hadi Beveridge Eguino" major="Program Manager" />
         <Intern image={img31} name="Nicholas Xu" major="Program Manager" />
       </div>
+
     </div>
 
-    
+      
+        <img
+          src={workingSmiski}
+          alt="smiski"
+          className="absolute bottom-0 z-20 h-[80px] lg:h-[300px] w-auto object-contain"
+          />
 
+      
   </div>
   <Footer></Footer>
+  <BackToTopButton/>
 </>
 
         
