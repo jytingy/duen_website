@@ -1,35 +1,25 @@
 //placeholder image
+import img from './blankPFP.jpg';
+
 import img1 from '../assets/devin.jpg';
 import img2 from '../assets/sachin.jpg';
 import img3 from '../assets/justin.png';
 import img4 from '../assets/ellaina.jpg';
 import img5 from '../assets/jessica.jpg';
 import img6 from '../assets/nancy.jpg';
-import img7 from './blankPFP.jpg';
 import img8 from '../assets/atharva.jpg';
-import img9 from './blankPFP.jpg';
 import img10 from '../assets/ryann.jpg';
 import img11 from '../assets/ben.jpg';
-import img12 from './blankPFP.jpg';
 import img13 from '../assets/claris.jpg';
-import img14 from './blankPFP.jpg';
 import img15 from '../assets/maya.jpg';
 import img16 from '../assets/ethan.jpg';
-import img17 from './blankPFP.jpg';
 import img18 from '../assets/kenneth.jpg';
-import img19 from './blankPFP.jpg';
-import img20 from '../assets/etienne.webp';
 import img21 from '../assets/jeff.webp';
-import img22 from '../assets/hanna.webp';
-import img23 from '../assets/hadi.webp';
-import img24 from '../assets/nickx.webp';
 import img25 from '../assets/etienne.webp';
 import img26 from '../assets/cindy.webp';
 import img27 from '../assets/hanna.webp';
 import img28 from '../assets/hadi.webp';
 import img29 from '../assets/nickx.webp';
-import img30 from '../assets/hadi.webp';
-import img31 from '../assets/nickx.webp';
 
 import peekingSmiski from '../assets/smiskis/peeking.png';
 
@@ -128,9 +118,9 @@ function Team() {
       </div>
 
       <div className="flex flex-wrap justify-center sm:flex-row items-start gap-4 sm:gap-[10px] self-stretch">
-        <Intern image={img7} name="Nik Buerger" major="Mechanical Engineering" />
+        <Intern image={img} name="Nik Buerger" major="Mechanical Engineering" />
         <Intern image={img8} name="Atharva Kharwadkar" major="Mechanical Engineering" />
-        <Intern image={img9} name="Maddy Kim" major="Biological Systems Engineering" />
+        <Intern image={img} name="Maddy Kim" major="Biological Systems Engineering" />
         <Intern image={img10} name="Ryan Nakayama" major="Mechanical Engineering" />
       </div>
     </div>
@@ -148,9 +138,9 @@ function Team() {
 
       <div className="flex flex-wrap justify-center sm:flex-row items-start gap-4 sm:gap-[10px] self-stretch">
         <Intern image={img11} name="Ben Brundage" major="Computer Engineering" />
-        <Intern image={img12} name="Adam Kim" major="Computer Engineering" />
+        <Intern image={img} name="Adam Kim" major="Computer Engineering" />
         <Intern image={img13} name="Claris Tain" major="Electrical Engineering" />
-        <Intern image={img14} name="Ryan Ton" major="Computer Engineering" />
+        <Intern image={img} name="Ryan Ton" major="Computer Engineering" />
       </div>
     </div>
 
@@ -170,9 +160,9 @@ function Team() {
       <div className="flex flex-wrap justify-center sm:flex-row items-start gap-4 sm:gap-[10px] self-stretch">
         <Intern image={img15} name="Maya Athayasay" major="Chemical Engineering" />
         <Intern image={img16} name="Ethan Cooc" major="Environmental Science" />
-        <Intern image={img17} name="Donald Le" major="Chemical Engineering" />
+        <Intern image={img} name="Donald Le" major="Chemical Engineering" />
         <Intern image={img18} name="Kenneth Nguyen" major="Environmental Engineering" />
-        <Intern image={img19} name="Sophia Palae" major="Data Science" />
+        <Intern image={img} name="Sophia Palae" major="Data Science" />
       </div>
     </div>
 
@@ -188,13 +178,13 @@ function Team() {
       </div>
 
       <div className="flex flex-wrap justify-center sm:flex-row items-start gap-4 sm:gap-[10px] self-stretch">
-        <Intern image={img20} name="Ben Busche" major="Mechanical Engineering" />
+        <Intern image={img} name="Ben Busche" major="Mechanical Engineering" />
         <Intern image={img21} name="Jefferson Fan" major="Mechanical Engineering" />
-        <Intern image={img22} name="Lianne R. de Leon" major="Mechanical Engineering" />
-        <Intern image={img23} name="Jeshurun Liou" major="Mechanical Engineering" />
-        <Intern image={img24} name="Ian Marwong" major="Computer Engineering" />
-        <Intern image={img25} name="Lorenzo Nakata" major="Electrical Engineering" />
-        <Intern image={img26} name="Seshnag Regoti" major="Food Science And Technology" />
+        <Intern image={img} name="Lianne R. de Leon" major="Mechanical Engineering" />
+        <Intern image={img} name="Jeshurun Liou" major="Mechanical Engineering" />
+        <Intern image={img} name="Ian Marwong" major="Computer Engineering" />
+        <Intern image={img} name="Lorenzo Nakata" major="Electrical Engineering" />
+        <Intern image={img} name="Seshnag Regoti" major="Food Science And Technology" />
       </div>
     </div>
 
@@ -210,11 +200,11 @@ function Team() {
       </div>
 
       <div className="flex flex-wrap justify-center sm:flex-row items-start gap-4 sm:gap-[10px] self-stretch">
-        <Intern image={img27} name="Etienne Rousseau" major="President" />
-        <Intern image={img28} name="Cindy Shing" major="Vice President" />
-        <Intern image={img29} name="Hanna Dao" major="Secretary" />
-        <Intern image={img30} name="Hadi Beveridge Eguino" major="Program Manager" />
-        <Intern image={img31} name="Nicholas Xu" major="Program Manager" />
+        <Intern image={img25} name="Etienne Rousseau" major="President" />
+        <Intern image={img26} name="Cindy Shing" major="Vice President" />
+        <Intern image={img27} name="Hanna Dao" major="Secretary" />
+        <Intern image={img28} name="Hadi Beveridge Eguino" major="Program Manager" />
+        <Intern image={img29} name="Nicholas Xu" major="Program Manager" />
       </div>
     </div>
 
