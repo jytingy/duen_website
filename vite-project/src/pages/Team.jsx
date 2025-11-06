@@ -1,7 +1,7 @@
 //placeholder image
 import img1 from '../assets/devin.jpg';
 import img2 from '../assets/sachin.jpg';
-import img3 from './blankPFP.jpg';
+import img3 from '../assets/justin.png';
 import img4 from '../assets/ellaina.jpg';
 import img5 from '../assets/jessica.jpg';
 import img6 from '../assets/nancy.jpg';
@@ -18,6 +18,19 @@ import img16 from '../assets/ethan.jpg';
 import img17 from './blankPFP.jpg';
 import img18 from '../assets/kenneth.jpg';
 import img19 from './blankPFP.jpg';
+import img20 from '../assets/etienne.webp';
+import img21 from '../assets/jeff.webp';
+import img22 from '../assets/hanna.webp';
+import img23 from '../assets/hadi.webp';
+import img24 from '../assets/nickx.webp';
+import img25 from '../assets/etienne.webp';
+import img26 from '../assets/cindy.webp';
+import img27 from '../assets/hanna.webp';
+import img28 from '../assets/hadi.webp';
+import img29 from '../assets/nickx.webp';
+import img30 from '../assets/hadi.webp';
+import img31 from '../assets/nickx.webp';
+
 import peekingSmiski from '../assets/smiskis/peeking.png';
 
 import Intern from "../components/Intern";
@@ -38,29 +51,31 @@ function Team() {
   className="title-section relative flex flex-col justify-center items-center gap-2.5 min-h-[400px] self-stretch"
   style={{ backgroundColor: "#201224" }}
 >
-  <div className="flex flex-col justify-center items-center gap-2.5 p-2.5 w-[526px] flex-1">
-    <h1 className="text-[#E9D7AF] font-poppins text-3xl sm:text-5xl font-semibold leading-normal">
+  <div className="flex flex-col justify-center items-center gap-2.5 p-2.5 w-[726px] flex-1">
+    <h1 className="text-[#E9D7AF] font-poppins text-3xl sm:text-6xl font-semibold leading-normal">
       Nonchalant Hustlers
     </h1>
     <h2 className="text-white font-poppins text-xl sm:text-3xl font-normal leading-normal">
       Construction Team
     </h2>
   </div>
-
-  <img
-    src={peekingSmiski}
-    alt="smiski"
-    className="absolute bottom-0 z-20 h-[80px] w-auto object-contain"
+  <img 
+    src={peekingSmiski} 
+    alt="smiski" 
+    className="absolute bottom-0 z-20 h-[80px] w-auto object-contain" 
   />
 </div>
+
+
+
 
     {/* Intern grid */}
     <div className="flex flex-col items-start gap-6 p-4 sm:p-[50px_20px] self-stretch">
 
     {/* Computer Vision */}
     <div className="flex flex-col items-center gap-4 sm:gap-[10px] self-stretch">
-      <div className="flex flex-col py-4 sm:py-5 justify-center items-center gap-2 sm:gap-10 w-full max-w-[1000px] mx-auto">
-        <h1 className="text-[#201224] font-poppins text-2xl sm:text-4xl font-semibold leading-normal">
+      <div className="flex flex-col py-4 sm:py-5 justify-center items-center gap-2 sm:gap-2 w-full max-w-[1000px] mx-auto">
+        <h1 className="text-[#201224] font-poppins text-2xl sm:text-5xl font-bold leading-normal">
           Computer Vision
         </h1>
         <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal">
@@ -81,8 +96,8 @@ function Team() {
 
     {/* Website Development */}
     <div className="flex flex-col items-center gap-4 sm:gap-[10px] self-stretch">
-      <div className="flex flex-col py-4 sm:py-5 justify-center items-center gap-2 sm:gap-10 w-full max-w-[1000px] mx-auto">
-        <h1 className="text-[#201224] font-poppins text-2xl sm:text-4xl font-semibold leading-normal">
+      <div className="flex flex-col py-4 sm:py-5 justify-center items-center gap-2 sm:gap-2 w-full max-w-[1000px] mx-auto">
+        <h1 className="text-[#201224] font-poppins text-2xl sm:text-5xl font-semibold leading-normal">
           Website Development
         </h1>
         <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal">
@@ -103,8 +118,8 @@ function Team() {
 
     {/* Mechanical */}
     <div className="flex flex-col items-center gap-4 sm:gap-[10px] self-stretch">
-      <div className="flex flex-col py-4 sm:py-5 justify-center items-center gap-2 sm:gap-10 w-full max-w-[1000px] mx-auto">
-        <h1 className="text-[#201224] font-poppins text-2xl sm:text-4xl font-semibold leading-normal">
+      <div className="flex flex-col py-4 sm:py-5 justify-center items-center gap-2 sm:gap-2 w-full max-w-[1000px] mx-auto">
+        <h1 className="text-[#201224] font-poppins text-2xl sm:text-5xl font-semibold leading-normal">
           Mechanical
         </h1>
         <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal">
@@ -122,8 +137,8 @@ function Team() {
 
     {/* Electrical */}
     <div className="flex flex-col items-center gap-4 sm:gap-[10px] self-stretch">
-      <div className="flex flex-col py-4 sm:py-5 justify-center items-center gap-2 sm:gap-10 w-full max-w-[1000px] mx-auto">
-        <h1 className="text-[#201224] font-poppins text-2xl sm:text-4xl font-semibold leading-normal">
+      <div className="flex flex-col py-4 sm:py-5 justify-center items-center gap-2 sm:gap-2 w-full max-w-[1000px] mx-auto">
+        <h1 className="text-[#201224] font-poppins text-2xl sm:text-5xl font-semibold leading-normal">
           Electrical
         </h1>
         <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal">
@@ -141,8 +156,8 @@ function Team() {
 
     {/* Documentation */}
     <div className="flex flex-col items-center gap-4 sm:gap-[10px] self-stretch">
-      <div className="flex flex-col py-4 sm:py-5 justify-center items-center gap-2 sm:gap-10 w-full max-w-[1000px] mx-auto">
-        <h1 className="text-[#201224] font-poppins text-2xl sm:text-4xl font-semibold leading-normal">
+      <div className="flex flex-col py-4 sm:py-5 justify-center items-center gap-2 sm:gap-2 w-full max-w-[1000px] mx-auto">
+        <h1 className="text-[#201224] font-poppins text-2xl sm:text-5xl font-semibold leading-normal">
           Documentation
         </h1>
         <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal">
@@ -161,6 +176,49 @@ function Team() {
       </div>
     </div>
 
+    {/* Construction Helpers */}
+    <div className="flex flex-col items-center gap-4 sm:gap-[10px] self-stretch">
+      <div className="flex flex-col py-4 sm:py-5 justify-center items-center gap-2 sm:gap-2 w-full max-w-[1000px] mx-auto">
+        <h1 className="text-[#201224] font-poppins text-2xl sm:text-5xl font-semibold leading-normal">
+          Construction Helpers
+        </h1>
+        <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal">
+          DESCRIPTION
+        </p>
+      </div>
+
+      <div className="flex flex-wrap justify-center sm:flex-row items-start gap-4 sm:gap-[10px] self-stretch">
+        <Intern image={img20} name="Ben Busche" major="Mechanical Engineering" />
+        <Intern image={img21} name="Jefferson Fan" major="Mechanical Engineering" />
+        <Intern image={img22} name="Lianne R. de Leon" major="Mechanical Engineering" />
+        <Intern image={img23} name="Jeshurun Liou" major="Mechanical Engineering" />
+        <Intern image={img24} name="Ian Marwong" major="Computer Engineering" />
+        <Intern image={img25} name="Lorenzo Nakata" major="Electrical Engineering" />
+        <Intern image={img26} name="Seshnag Regoti" major="Food Science And Technology" />
+      </div>
+    </div>
+
+    {/* E-Board */}
+    <div className="flex flex-col items-center gap-4 sm:gap-[10px] self-stretch">
+      <div className="flex flex-col py-4 sm:py-5 justify-center items-center gap-2 sm:gap-2 w-full max-w-[1000px] mx-auto">
+        <h1 className="text-[#201224] font-poppins text-2xl sm:text-5xl font-semibold leading-normal">
+          Executive Board
+        </h1>
+        <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal">
+          Oversaw the 2025 Fall Cohort throughout the entire internship process.
+        </p>
+      </div>
+
+      <div className="flex flex-wrap justify-center sm:flex-row items-start gap-4 sm:gap-[10px] self-stretch">
+        <Intern image={img27} name="Etienne Rousseau" major="President" />
+        <Intern image={img28} name="Cindy Shing" major="Vice President" />
+        <Intern image={img29} name="Hanna Dao" major="Secretary" />
+        <Intern image={img30} name="Hadi Beveridge Eguino" major="Program Manager" />
+        <Intern image={img31} name="Nicholas Xu" major="Program Manager" />
+      </div>
+    </div>
+
+    
 
   </div>
   <Footer></Footer>

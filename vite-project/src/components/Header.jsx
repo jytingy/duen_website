@@ -6,7 +6,7 @@ import duenLogo from "../assets/duen.webp"; // adjust path if needed
 
 const pathByLabel = {
   Home: "",
-  Team: "/team",
+  Team: "/",
   Photos: "/photos",
 };
 

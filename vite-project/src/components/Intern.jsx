@@ -1,8 +1,8 @@
 function Intern({ image, name, major }) {
   return (
-    <div className="relative flex w-[232px] flex-col items-center gap-2 group">
+    <div className="relative flex w-[292px] flex-col items-center gap-2 group">
       {/* Image frame */}
-      <div className="relative w-[232px] h-[232px] overflow-hidden rounded-lg">
+      <div className="relative w-[292px] h-[292px] overflow-hidden rounded-lg">
         <img
           src={image}
           alt={name}
