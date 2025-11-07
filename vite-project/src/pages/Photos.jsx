@@ -6,6 +6,7 @@ import img3 from "../assets/quality.png";
 import img4 from "../assets/testing.png";
 import img5 from "../assets/success.png";
 import img6 from "../assets/gametesting.png";
+import img7 from "../assets/CV.png";
 import laptopSmiski from "../assets/smiskis/laptop.png";
 import BackToTopButton from "../components/BackToTopButton";
 const timeline = [
@@ -36,6 +37,13 @@ const timeline = [
     description:
       "The Flappy Bird game worked with visual input from the AI camera and displayed on the screen.",
     image: img5,
+  },
+  {
+    date: "Week 3",
+    title: "Combining Systems",
+    description:
+      "Computer Vision Team successfully integrated the game with the mechanical and electrical systems.",
+    image: img7,
   },
 ];
 
