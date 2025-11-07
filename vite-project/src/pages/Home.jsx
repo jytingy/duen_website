@@ -18,7 +18,7 @@ function Home() {
       <div className="flex flex-col min-h-screen">
         {/* First Scroll */}
         <section
-          className="flex flex-col md:flex-row w-full pt-[86px]" // matches header height
+          className="flex flex-col md:flex-row w-full pt-[50px]" // matches header height
           style={{ backgroundColor: "#221125" }}
         >
             

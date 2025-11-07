@@ -20,7 +20,10 @@ export default function Header() {
       <div className="max-w mx-auto flex items-center justify-between h-[60px] px-5">
         {/* Logo / Brand */}
         <div className="flex items-center gap-2">
-          <img src={duenLogo} alt="DUEN Logo" className="h-[40px] w-auto" />
+          <Link to="/">
+            <img src={duenLogo} alt="DUEN Logo" className="h-[40px] w-auto" />
+          </Link>
+          
         </div>
 
         {/* Desktop navigation */}
