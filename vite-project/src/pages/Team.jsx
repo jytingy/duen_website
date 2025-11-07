@@ -7,12 +7,14 @@ import img3 from '../assets/justin.png';
 import img4 from '../assets/ellaina.jpg';
 import img5 from '../assets/jessica.jpg';
 import img6 from '../assets/nancy.jpg';
+import img7 from '../assets/nik.png';
 import img8 from '../assets/atharva.jpg';
 import img9 from '../assets/maddy.png';
 import img10 from '../assets/ryann.jpg';
 import img11 from '../assets/ben.jpg';
 import img12 from '../assets/adam.png';
 import img13 from '../assets/claris.jpg';
+import img14 from '../assets/ryant.png';
 import img15 from '../assets/maya.jpg';
 import img16 from '../assets/ethan.jpg';
 import img17 from '../assets/donald.png';
@@ -130,7 +132,7 @@ function Team() {
       </div>
 
       <div className="flex flex-wrap justify-center sm:flex-row items-start gap-4 sm:gap-[10px] self-stretch">
-        <Intern image={img} name="Nik Buerger" major="Mechanical Engineering" />
+        <Intern image={img7} name="Nik Buerger" major="Mechanical Engineering" />
         <Intern image={img8} name="Atharva Kharwadkar" major="Mechanical Engineering" />
         <Intern image={img9} name="Maddy Kim" major="Biological Systems Engineering" />
         <Intern image={img10} name="Ryan Nakayama" major="Mechanical Engineering" />
@@ -155,7 +157,7 @@ function Team() {
         <Intern image={img11} name="Ben Brundage" major="Computer Engineering" />
         <Intern image={img12} name="Adam Kim" major="Computer Engineering" />
         <Intern image={img13} name="Claris Tain" major="Electrical Engineering" />
-        <Intern image={img} name="Ryan Ton" major="Computer Engineering" />
+        <Intern image={img14} name="Ryan Ton" major="Computer Engineering" />
       </div>
     </div>
 
