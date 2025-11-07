@@ -4,21 +4,38 @@ import img1 from "../assets/code.png";
 import img2 from "../assets/prototyping.png";
 import img3 from "../assets/quality.png";
 import img4 from "../assets/testing.png";
-
+import img5 from "../assets/success.png";
+import img6 from "../assets/gametesting.png";
+import laptopSmiski from "../assets/smiskis/laptop.png";
+import BackToTopButton from "../components/BackToTopButton";
 const timeline = [
   { date: "Week 1", 
     image: img1, 
     title: "Code Logic", 
-    description: "Ryan is working on creating the toggle functionality for the rigged push button on TinkerCAD. The Raspberry Pi wasn’t here so he started with the Arduino." 
+    description: "While we wait for the Raspberry Pi to deliver, the Electrical Team starts coding the motors, wheel, and emergency button. They start creating the toggle functionality for the rigged push button on TinkerCAD. " 
 },
-  { date: "Week 2", image: img2, title: "Prototyping", description: "Nik and Ben drafting a rough prototype drawing of a rack and pinion mechanism to drive the cart out of the tabling assistant (AKA Project Adam)" },
-  { date: "Week 2", image: img3, title: "Quality Control", description: "Atharva is putting together the chassis to check the concentricity of the fixtures that keep our structure together." },
+  { date: "Week 2", image: img2, title: "Brainstorming", description: "Mechanical Team brainstorming and comparing different methods to dispense the flyer after each win. Finalized a design with a rack and pinion mechanism that will drive a small tray with the flyer out of the Tabling Assistant." },
+  { date: "Week 2", image: img3, title: "Assembly", description: "External pieces finish 3D printing. Mechanical Team begins putting together the chassis to check the concentricity of the fixtures that keep our structure together." },
+  {
+    date: "Week 2",
+    title: "Testing Game",
+    description:
+      "Computer Vision Team starts programming the Raspberry Pi 5 camera to use pose estimation to detect the position of wrist, shoulder, and elbow landmarks to control the game.",
+    image: img6,
+  },
   {
     date: "Week 3",
     title: "Testing Code",
     description:
-      "Adam is finalizing the tray motor code and implementing the code for the gate and wheel motors. He is soldering and testing all 3 motors and prototyping the solderless breadboard.",
+      "Electrical Team is finalizing the tray motor code and implementing the code for the gate and wheel motors.",
     image: img4,
+  },
+  {
+    date: "Week 3",
+    title: "Successful Test",
+    description:
+      "The Flappy Bird game worked with visual input from the AI camera and displayed on the screen.",
+    image: img5,
   },
 ];
 
@@ -29,12 +46,14 @@ export default function Photos() {
         <div className="fixed top-0 left-0 w-full z-50">
             <Header/>
         </div>
+        
     <section className="relative w-full bg-[#201224] pt-20 pb-10 px-6 overflow-hidden">
-      {/* Vertical Line */}
+      <img src={laptopSmiski} alt="laptop" className="absolute right-6 h-[100px] md:h-[100px] lg:h-[200px]"/>
+        {/* Vertical Line */}
       <div className="absolute left-1/2 top-0 h-full w-[2px] bg-[#E9D7AF] hidden md:block -translate-x-1/2 z-0" />
 
       {/* Title */}
-      <h1 className="relative z-20 text-center text-white font-poppins text-4xl sm:text-5xl font-semibold mb-16 bg-[#201224] inline-block px-4">
+      <h1 className="relative z-20 text-center text-[#E9D7AF] font-poppins text-4xl sm:text-5xl font-semibold mb-16 bg-[#201224] inline-block px-4">
         Project Timeline
       </h1>
 
@@ -91,6 +110,7 @@ export default function Photos() {
       </div>
     </section>
     <Footer/>
+    <BackToTopButton/>
     </>
   );
 }

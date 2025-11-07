@@ -8,18 +8,28 @@ import img4 from '../assets/ellaina.jpg';
 import img5 from '../assets/jessica.jpg';
 import img6 from '../assets/nancy.jpg';
 import img8 from '../assets/atharva.jpg';
+import img9 from '../assets/maddy.png';
 import img10 from '../assets/ryann.jpg';
 import img11 from '../assets/ben.jpg';
+import img12 from '../assets/adam.png';
 import img13 from '../assets/claris.jpg';
 import img15 from '../assets/maya.jpg';
 import img16 from '../assets/ethan.jpg';
+import img17 from '../assets/donald.png';
 import img18 from '../assets/kenneth.jpg';
+import img19 from '../assets/sophia.png';
+import img20 from '../assets/ben.webp';
 import img21 from '../assets/jeff.webp';
-import img25 from '../assets/etienne.webp';
-import img26 from '../assets/cindy.webp';
-import img27 from '../assets/hanna.webp';
-import img28 from '../assets/hadi.webp';
-import img29 from '../assets/nickx.webp';
+import img22 from '../assets/lianne.webp';
+import img23 from '../assets/jj.webp';
+import img24 from '../assets/ian.webp';
+import img25 from '../assets/lorenzo.webp';
+import img26 from '../assets/seshu.webp';
+import img27 from '../assets/etienne.webp';
+import img28 from '../assets/cindy.webp';
+import img29 from '../assets/hanna.webp';
+import img30 from '../assets/hadi.webp';
+import img31 from '../assets/nickx.webp';
 
 import peekingSmiski from '../assets/smiskis/peeking.png';
 import workingSmiski from '../assets/smiskis/working.png';
@@ -50,11 +60,6 @@ function Team() {
       Construction Team
     </h2>
   </div>
-  <img 
-    src={peekingSmiski} 
-    alt="smiski" 
-    className="absolute bottom-0 z-20 h-[80px] w-auto object-contain" 
-  />
 
 </div>
 
@@ -74,8 +79,8 @@ function Team() {
           The Computer Vision team was responsible for designing a game that would be played by the person who approached the tabling machine. 
           The game takes a twist on the game, Flappy Bird. Instead of flapping by tapping the screen, the player flaps by moving their arms.
           The AI camera is focused on 33 specific points of the body (landmarks), of which was mainly focused on the elbow, shoulder, and wrists, and eyes. 
-          Using these landmarks, we were able to determine the position of the arms in order to control the game. The game was displayed on a screen on the tabling machine.
-          After passing through 5 pipes successfully, the player wins the game and the prize wheel spins.
+          Using these landmarks, we were able to determine the position of the arms in order to control the game. 
+          The game was displayed on a screen on the tabling machine.
         </p>
       </div>
 
@@ -117,17 +122,17 @@ function Team() {
         <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal">
           
       The Mechanical Team was responsible for constructing the design and fabrication of our tabling machine. 
-      Our team uses CAD (Computer-Aided Design) software to create all structural components including the chassis, motorized spinner, gate, and tray mechanisms. 
-      Once the spinner lands on the flyer, a motorized gate will open to allow a tray to extend out of our structure with a flyer. 
+      Our team used CAD (Computer-Aided Design) software to create all structural components including the chassis, motorized spinner, gate, and tray mechanisms. 
       The Mechanical team worked to create a functional and durable system for tabling. 
-      Through prototyping and testing, the team created a mechanically reliable machine suitable for engaging students and by-passers. 
+      Through prototyping and testing, the team worked to create a functional and durable system for tabling that was suitable for engaging students and passersby.
+ 
         </p>
       </div>
 
       <div className="flex flex-wrap justify-center sm:flex-row items-start gap-4 sm:gap-[10px] self-stretch">
         <Intern image={img} name="Nik Buerger" major="Mechanical Engineering" />
         <Intern image={img8} name="Atharva Kharwadkar" major="Mechanical Engineering" />
-        <Intern image={img} name="Maddy Kim" major="Biological Systems Engineering" />
+        <Intern image={img9} name="Maddy Kim" major="Biological Systems Engineering" />
         <Intern image={img10} name="Ryan Nakayama" major="Mechanical Engineering" />
       </div>
     </div>
@@ -139,18 +144,16 @@ function Team() {
           Electrical
         </h1>
         <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal">
-          The Electrical team was responsible for programming and coding all electronics in all the parts we needed. 
-          They created the circuit designer pin out with parts including raspberry pi, stepper motors, wiring, motor drivers, etc. 
-          The team created a rough diagram to make a powering schematic with all the parts. 
-          They also created the code for the motor movements and soldered wires for testing the motors.
-           They calibrated all the motors to perform the functions of lifting the gate, spinning the wheel, and ejecting the tray. 
-           Along with the reverse operations for the gate and tray. 
+          The Electrical Team handled all the coding and wiring for the project’s electronics. 
+          They designed the circuit layout using components like the Raspberry Pi, stepper motors, motor drivers, and wiring. 
+          After planning out the power schematic, they wrote the code to control motor movements and soldered the power and ground connections for testing. 
+          Once everything was wired, they calibrated the motors to lift the gate, spin the wheel, and eject the tray, as well as run those actions in reverse.
         </p>
       </div>
 
       <div className="flex flex-wrap justify-center sm:flex-row items-start gap-4 sm:gap-[10px] self-stretch">
         <Intern image={img11} name="Ben Brundage" major="Computer Engineering" />
-        <Intern image={img} name="Adam Kim" major="Computer Engineering" />
+        <Intern image={img12} name="Adam Kim" major="Computer Engineering" />
         <Intern image={img13} name="Claris Tain" major="Electrical Engineering" />
         <Intern image={img} name="Ryan Ton" major="Computer Engineering" />
       </div>
@@ -172,9 +175,9 @@ function Team() {
       <div className="flex flex-wrap justify-center sm:flex-row items-start gap-4 sm:gap-[10px] self-stretch">
         <Intern image={img15} name="Maya Athayasay" major="Chemical Engineering" />
         <Intern image={img16} name="Ethan Cooc" major="Environmental Science" />
-        <Intern image={img} name="Donald Le" major="Chemical Engineering" />
+        <Intern image={img17} name="Donald Le" major="Chemical Engineering" />
         <Intern image={img18} name="Kenneth Nguyen" major="Environmental Engineering" />
-        <Intern image={img} name="Sophia Palae" major="Data Science" />
+        <Intern image={img19} name="Sophia Palae" major="Data Science" />
       </div>
     </div>
 
@@ -185,21 +188,20 @@ function Team() {
           Construction Helpers
         </h1>
         <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal">
-          Our Construction helpers were a crucial part of our construction project coming together. 
-          They assisted our team in aspects such as quality control, CAD, fabrication, measurements, and more. 
-          Our design, development, and implementation was enhanced with their help. 
-          Their feedback and mentorship support helped ensure our final design worked smoothly.
+          Our Construction Helpers played a key role in bringing our project to life. 
+          They supported the team with quality control, fabrication, wiring, and more. 
+          Their feedback and hands-on support made a huge difference in ensuring everything came together smoothly.
         </p>
       </div>
 
       <div className="flex flex-wrap justify-center sm:flex-row items-start gap-4 sm:gap-[10px] self-stretch">
-        <Intern image={img} name="Ben Busche" major="Mechanical Engineering" />
+        <Intern image={img20} name="Ben Busche" major="Mechanical Engineering" />
         <Intern image={img21} name="Jefferson Fan" major="Mechanical Engineering" />
-        <Intern image={img} name="Lianne R. de Leon" major="Mechanical Engineering" />
-        <Intern image={img} name="Jeshurun Liou" major="Mechanical Engineering" />
-        <Intern image={img} name="Ian Marwong" major="Computer Engineering" />
-        <Intern image={img} name="Lorenzo Nakata" major="Electrical Engineering" />
-        <Intern image={img} name="Seshnag Regoti" major="Food Science And Technology" />
+        <Intern image={img22} name="Lianne R. de Leon" major="Mechanical Engineering" />
+        <Intern image={img23} name="Jeshurun Liou" major="Mechanical Engineering" />
+        <Intern image={img24} name="Ian Marwong" major="Computer Engineering" />
+        <Intern image={img25} name="Lorenzo Nakata" major="Electrical Engineering" />
+        <Intern image={img26} name="Seshnag Regoti" major="Food Science And Technology" />
       </div>
     </div>
 
@@ -210,16 +212,17 @@ function Team() {
           Executive Board
         </h1>
         <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal">
-          Oversaw the 2025 Fall Cohort throughout the entire internship process.
+          Oversaw the 2025 Fall Cohort throughout the entire internship process. 
+          Our E-Board provided guidance, support, and mentorship to ensure a successful and enriching experience for all interns.
         </p>
       </div>
 
       <div className="flex flex-wrap justify-center sm:flex-row items-start gap-4 sm:gap-[10px] self-stretch">
-        <Intern image={img25} name="Etienne Rousseau" major="President" />
-        <Intern image={img26} name="Cindy Shing" major="Vice President" />
-        <Intern image={img27} name="Hanna Dao" major="Secretary" />
-        <Intern image={img28} name="Hadi Beveridge Eguino" major="Program Manager" />
-        <Intern image={img29} name="Nicholas Xu" major="Program Manager" />
+        <Intern image={img27} name="Etienne Rousseau" major="President" />
+        <Intern image={img28} name="Cindy Shing" major="Vice President" />
+        <Intern image={img29} name="Hanna Dao" major="Secretary" />
+        <Intern image={img30} name="Hadi Beveridge Eguino" major="Program Manager" />
+        <Intern image={img31} name="Nicholas Xu" major="Program Manager" />
       </div>
 
     </div>
@@ -228,11 +231,16 @@ function Team() {
         <img
           src={workingSmiski}
           alt="smiski"
-          className="absolute bottom-0 z-20 h-[80px] lg:h-[300px] w-auto object-contain"
+          className="absolute bottom-0 z-20 h-[80px] md:h-[100px] lg:h-[200px] xl:h-[300px] w-auto object-contain"
           />
 
       
   </div>
+  <img 
+    src={peekingSmiski} 
+    alt="smiski" 
+    className="absolute top-[313px] left-1/2 -translate-x-1/2 z-20 h-[100px] w-auto object-contain" 
+  />
   <Footer></Footer>
   <BackToTopButton/>
 </>
