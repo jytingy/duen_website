@@ -59,33 +59,69 @@ function Home() {
 
         {/* Second Scroll */}
         <section
-          className="flex flex-col items-center justify-center gap-6 py-10 px-4 sm:px-8"
-          style={{ backgroundColor: "   " }}
+          className="flex flex-col items-center justify-center gap-10 py-10 px-4 sm:px-8"
+          style={{ backgroundColor: "#F5F1F8" }} // optional light background
         >
-          <h1 className="text-[#201224] font-poppins text-2xl sm:text-4xl font-semibold leading-normal m-0">
+          {/* Header */}
+          <h1 className="text-[#201224] font-poppins text-2xl sm:text-4xl font-semibold text-center">
             About Our Project
           </h1>
-          <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal max-w-4xl m-0">
-            Our project is a tabling system designed to enhance the interactivity
-            of the DUEN club tabling experience for the general tabling audience.
-            The system incorporates a flappy bird game that physically engages
-            users, making the tabling process more enjoyable and memorable.
-          </p>
 
-            <div className="flex flex-col items-center gap-0">
-            <img
-                src={placeholder}
-                alt="Smiski placeholder"
-                className="max-w-xs sm:max-w-sm md:max-w-md lg:w-[50rem] min-w-[300px] object-contain"
-            />
-            <img
-                src={holdingSmiski}
-                alt="Smiski holding"
-                className="w-24 sm:w-32 md:w-40 lg:w-40 object-contain"
-            />
+          {/* Sets column layout */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl w-full">
+
+            {/* Overview on right */}
+            <div className="flex flex-col items-center text-center md:text-left">
+              <div className="flex flex-col items-center mb-3">
+                <h2 className="text-[#201224] font-poppins text-xl sm:text-2xl font-semibold">
+                  Project Overview
+                </h2>
+                <div className="w-16 h-1 bg-[#7D5BA6] rounded-full mt-1"></div>
+              </div>
+              <p className="text-[#201224] font-poppins text-base sm:text-lg leading-relaxed max-w-md">
+                The “Tabling Assistant” is an interactive system designed to make DUEN’s
+                tabling experience more engaging for students. It features a computer
+                vision–based mini-game that responds to user movements, and a motor
+                that dispenses a tray with a flyer upon completion. The device aims to
+                attract attention, foster engagement, and promote DUEN in a fun,
+                hands-on way.
+              </p>
             </div>
 
+            {/* Goals and objectives on right */}
+            <div className="flex flex-col items-center text-center md:text-left md:pl-10">
+              <div className="flex flex-col items-center mb-3">
+                <h2 className="text-[#201224] font-poppins text-xl sm:text-2xl font-semibold">
+                  Goals and Objectives
+                </h2>
+                <div className="w-16 h-1 bg-[#7D5BA6] rounded-full mt-1"></div>
+              </div>
+              <ul className="text-[#201224] font-poppins text-base sm:text-lg leading-relaxed list-disc list-outside pl-6 max-w-md">
+                <li>Design an engaging, interactive system for DUEN tabling events.</li>
+                <li>Integrate hardware and software for a memorable user experience.</li>
+                <li>Ensure the portability and durability of the mechanism to ensure ease of use.</li>
+                <li>Showcase multidisciplinary engineering collaboration and creativity.</li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          {/* Images section (optional, kept at bottom) */}
+          <div className="flex flex-col items-center gap-0 mt-10">
+            <img
+              src={placeholder}
+              alt="Project prototype placeholder"
+              className="max-w-xs sm:max-w-sm md:max-w-md lg:w-[50rem] min-w-[300px] object-contain"
+            />
+            <img
+              src={holdingSmiski}
+              alt="Smiski holding"
+              className="w-24 sm:w-32 md:w-40 lg:w-40 object-contain"
+            />
+          </div>
         </section>
+
 
         {/* Third scroll */}
         <div className="flex flex-col items-center gap-6 p-4 sm:p-[50px_20px] self-stretch" style={{ backgroundColor: "#E9D7AF" }}>
