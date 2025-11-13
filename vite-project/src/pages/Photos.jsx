@@ -89,25 +89,25 @@ export default function Photos() {
 
             {/* Text block (always opposite side on desktop, centered on mobile) */}
             <div
-            className={`w-full md:w-1/2 mt-6 md:mt-0 text-center md:text-${
-                index % 2 === 0 ? "left" : "right"
-            }`}
-            >
-            <div
-                className={`flex flex-col items-center md:items-${
-                index % 2 === 0 ? "start md:pl-8" : "end md:pr-8"
-                }`}
-            >
-                <h3 className="text-2xl font-semibold text-[#E9D7AF] mb-2">
-                {item.title}
-                </h3>
-                <p className="text-gray-200 mb-3 max-w-md">
-                {item.description}
-                </p>
-                <span className="bg-[#E9D7AF] text-[#201224] text-sm font-bold px-3 py-1 rounded-full">
-                {item.date}
-                </span>
-            </div>
+              className={`w-full md:w-1/2 mt-6 md:mt-0 text-center md:text-center${
+                  index % 2 === 0 ? "left" : "right"
+              }`}
+              >
+              <div
+                  className={`flex flex-col items-center md:items-${
+                  index % 2 === 0 ? "start md:pl-8" : "end md:pr-8"
+                  }`}
+              >
+                  <h3 className="text-2xl font-semibold text-[#E9D7AF] mb-2">
+                  {item.title}
+                  </h3>
+                  <p className="text-gray-200 mb-3 max-w-md">
+                  {item.description}
+                  </p>
+                  <span className="bg-[#E9D7AF] text-[#201224] text-sm font-bold px-3 py-1 rounded-full">
+                  {item.date}
+                  </span>
+              </div>
             </div>
 
 

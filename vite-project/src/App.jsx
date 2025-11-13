@@ -4,9 +4,17 @@ import Team from "./pages/Team";
 import Photos from "./pages/Photos";
 import Home from "./pages/Home";
 import ScrollToTop from "./components/ScrollToTop";
+import { ReactLenis, useLenis } from 'lenis/react'
+
 function App() {
+  const lenis = useLenis((lenis) => {
+    // called every scroll
+    console.log(lenis)
+  })
 
   return (
+    
+    <ReactLenis root >
     <Router>
       <ScrollToTop />
       <Routes>
@@ -16,6 +24,8 @@ function App() {
         <Route path="/photos" element={<Photos />} />
       </Routes>
     </Router>
+    
+    </ReactLenis>
   );
 }
 

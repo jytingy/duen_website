@@ -54,7 +54,7 @@ function Team() {
   className="title-section relative flex flex-col justify-center items-center gap-2.5 min-h-[400px] self-stretch"
   style={{ backgroundColor: "#201224" }}
 >
-  <div className="flex flex-col justify-center items-center gap-2.5 p-2.5 w-[726px] flex-1">
+  <div className="flex flex-col justify-center items-center gap-2.5 p-2.5 w-full flex-1">
     <h1 className="text-[#E9D7AF] font-poppins text-3xl sm:text-6xl font-semibold leading-normal">
       Nonchalant Hustlers
     </h1>
