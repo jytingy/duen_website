@@ -4,7 +4,7 @@ function Intern({ image, name, major }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleText = () => {
-    if (window.innerWidth < 768) setIsVisible(!isVisible); // only on mobile
+    setIsVisible(!isVisible); // Toggle visibility on click
   };
 
   return (
