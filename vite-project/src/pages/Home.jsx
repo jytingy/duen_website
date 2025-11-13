@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import groupPhoto from "../assets/duen_coverphoto.jpg";
+import groupPhoto from "../assets/cohortpic.png";
 import boredSmiski from "../assets/smiskis/bored.png";
 import holdingSmiski from "../assets/smiskis/holding.png";
 import phoneSmiski from "../assets/smiskis/phone.png";
@@ -18,7 +18,7 @@ function Home() {
       <div className="flex flex-col min-h-screen">
         {/* First Scroll */}
         <section
-          className="flex flex-col md:flex-row w-full pt-[50px]" // matches header height
+          className="flex flex-col md:flex-row w-full min-h-screen m-0 p-0"
           style={{ backgroundColor: "#221125" }}
         >
             
@@ -70,7 +70,7 @@ function Home() {
           {/* Sets column layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl w-full">
 
-            {/* Overview on right */}
+            {/* Overview on left */}
             <div className="flex flex-col items-center text-center md:text-left">
               <div className="flex flex-col items-center mb-3">
                 <h2 className="text-[#201224] font-poppins text-xl sm:text-2xl font-semibold">
@@ -81,8 +81,8 @@ function Home() {
               <p className="text-[#201224] font-poppins text-base sm:text-lg leading-relaxed max-w-md">
                 The “Tabling Assistant” is an interactive system designed to make DUEN’s
                 tabling experience more engaging for students. It features a computer
-                vision–based mini-game that responds to user movements, and a motor
-                that dispenses a tray with a flyer upon completion. The device aims to
+                vision based flappy bird mini-game that responds to user movements with a motor 
+                and prize wheel that dispenses a tray with a flyer upon completion. The device aims to
                 attract attention, foster engagement, and promote DUEN in a fun,
                 hands-on way.
               </p>
@@ -96,7 +96,7 @@ function Home() {
                 </h2>
                 <div className="w-16 h-1 bg-[#7D5BA6] rounded-full mt-1"></div>
               </div>
-              <ul className="text-[#201224] font-poppins text-base sm:text-lg leading-relaxed list-disc list-outside pl-6 max-w-md">
+              <ul className="text-[#201224] text-left font-poppins text-base sm:text-lg leading-relaxed list-disc list-outside pl-6 max-w-md">
                 <li>Design an engaging, interactive system for DUEN tabling events.</li>
                 <li>Integrate hardware and software for a memorable user experience.</li>
                 <li>Ensure the portability and durability of the mechanism to ensure ease of use.</li>

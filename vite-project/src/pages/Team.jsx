@@ -1,5 +1,4 @@
 //placeholder image
-import img from './blankPFP.jpg';
 
 import img1 from '../assets/devin.jpg';
 import img2 from '../assets/sachin.jpg';
