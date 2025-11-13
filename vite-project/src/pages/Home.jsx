@@ -15,7 +15,7 @@ function Home() {
       </div>
 
       {/* Main Page */}
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen overflow-x-hidden">
         {/* First Scroll */}
         <section
           className="flex flex-col md:flex-row w-full min-h-screen m-0 p-0"
@@ -27,7 +27,7 @@ function Home() {
             <h1 className="text-4xl font-normal text-[#9a793f] m-0">
               Davis Undergraduate Engineering Network
             </h1>
-            <h2 className="text-3xl font-bold text-[#9a793f] mt-6 m-0 animate-fadeIn">
+            <h2 className="text-3xl font-bold text-[#9a793f] mt-6 m-0">
               DUEN Fall '25 Cohort Project Overview
             </h2>
             <div className="relative mt-8">
@@ -36,9 +36,9 @@ function Home() {
                 alt="Smiski bored"
                 className="
                     relative 
-                    top-10 left-6          /* small screens */
-                    sm:top-16 sm:left-12   /* tablets */
-                    md:top-20 md:left-20   /* medium laptops */
+                    top-10 left-6         /* small screens */
+                    sm:top-16 sm:left-2   /* tablets */
+                    md:top-20 md:left-2   /* medium laptops */
                     lg:top-24 lg:left-2   /* large desktops */
                     w-30 sm:w-34 md:w-42 lg:w-60
                     object-contain
@@ -48,13 +48,16 @@ function Home() {
           </div>
 
           {/* Right side image */}
-          <div className="w-full md:w-1/2 h-[600px]">
-            <img
-              src={groupPhoto}
-              alt="Group photo"
-              className="w-full h-full object-cover"
-            />
+          <div className="md:w-1/2 lg:w-1/2 h-[600px] relative">
+          <img
+            src={groupPhoto}
+            alt="Group photo"
+            className="absolute w-full h-full object-cover rounded-2xl
+                      md:top-20 md:left-2
+                      lg:top-16 lg:left-2"
+          />
           </div>
+
         </section>
 
         {/* Second Scroll */}
@@ -131,7 +134,7 @@ function Home() {
             <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal max-w-4xl">
                 Some video showing project
             </p>
-            <img src={phoneSmiski} className="w-32 md:w-48 lg:w-60 object-contain mt-10"></img>
+            <img src={phoneSmiski} className="sm:w-30 md:w-30 lg:w-30 object-contain mt-10"></img>
         </div>
         {/* End of third scroll */}
 
