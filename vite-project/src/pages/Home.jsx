@@ -50,17 +50,14 @@ function Home() {
           </div>
 
           {/* Right side image */}
-          <div className="md:w-1/2 lg:w-1/2 h-[600px] relative">
-          <img
-            src={groupPhoto}
-            alt="Group photo"
-            draggable="false"
-            className="absolute w-full h-full object-cover rounded-2xl
-                      md:top-20 md:left-2
-                      lg:top-16 lg:left-2"
-          />
+          <div className="md:w-1/2 lg:w-1/2 flex justify-center items-center p-4">
+            <img
+              src={groupPhoto}
+              alt="Group photo"
+              draggable="false"
+              className="w-full h-auto max-h-screen object-contain rounded-2xl"
+            />
           </div>
-
         </section>
 
         {/* Second Scroll */}
@@ -136,12 +133,12 @@ function Home() {
             <h1 className="text-[#201224] font-poppins text-2xl sm:text-4xl font-semibold leading-normal">
               Project Demo Video
             </h1>
-            <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal max-w-4xl">
-                <DemoVideo/>
-            </p>
+
+              <DemoVideo/>
+
             <img src={phoneSmiski} 
               draggable="false"
-              className="sm:w-30 md:w-30 lg:w-30 object-contain mt-10">
+              className="sm:w-20 md:w-30 lg:w-30 object-contain mt-10">
             </img>
         </div>
         {/* End of third scroll */}        
