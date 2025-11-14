@@ -136,11 +136,7 @@ function Home() {
             <div>
               <DemoVideo/>
             </div>
-            <img
-              src={phoneSmiski} 
-              draggable="false"
-              className="w-1/3 sm:w-1/4 md:w-32 lg:w-32 max-w-[120px] object-contain mt-6"
-            />
+
         </div>
         {/* End of third scroll */}        
           <Footer />
