@@ -133,13 +133,14 @@ function Home() {
             <h1 className="text-[#201224] font-poppins text-2xl sm:text-4xl font-semibold leading-normal">
               Project Demo Video
             </h1>
-
+            <div>
               <DemoVideo/>
-
-            <img src={phoneSmiski} 
+            </div>
+            <img
+              src={phoneSmiski} 
               draggable="false"
-              className="sm:w-20 md:w-30 lg:w-30 object-contain mt-10">
-            </img>
+              className="w-1/3 sm:w-1/4 md:w-32 lg:w-32 max-w-[120px] object-contain mt-6"
+            />
         </div>
         {/* End of third scroll */}        
           <Footer />
