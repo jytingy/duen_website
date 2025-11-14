@@ -7,6 +7,9 @@ import img4 from "../assets/testing.png";
 import img5 from "../assets/success.png";
 import img6 from "../assets/gametesting.png";
 import img7 from "../assets/CV.png";
+import img8 from "../assets/finishingtouches.jpg";
+import img9 from "../assets/firstpresentation.jpg";
+import img10 from "../assets/painting.png";
 import laptopSmiski from "../assets/smiskis/laptop.png";
 import BackToTopButton from "../components/BackToTopButton";
 const timeline = [
@@ -45,6 +48,27 @@ const timeline = [
       "Computer Vision Team successfully integrated the game with the mechanical and electrical systems.",
     image: img7,
   },
+  {
+    date: "Week 3",
+    title: "Finishing Touches",
+    description:
+      "Putting everything together in preparation for the first presentation.",
+    image: img8,
+  },
+  {
+    date: "Week 3",
+    title: "First Presentation",
+    description:
+      "Completed the first presentation of our working prototype to DUEN officers and received valuable feedback for further improvements.",
+    image: img9,
+  },
+  {
+    date: "Week 4",
+    title: "Enhancing Visual Appeal",
+    description:
+      "Painting the Tabling Machine's exterior to make it more attractive and engaging for users at tabling events. The changes also aimed to make the device fit the DUEN aesthetic.",
+    image: img10,
+  },
 ];
 
 export default function Timeline() {
@@ -74,7 +98,7 @@ export default function Timeline() {
               index % 2 === 0 ? "" : "md:flex-row-reverse"
             }`}
           >
-            {/* Image (always touching the center line) */}
+            {/* Image */}
             <div
               className={`w-full md:w-1/2 flex justify-center md:justify-${
                 index % 2 === 0 ? "end" : "start"
@@ -83,7 +107,7 @@ export default function Timeline() {
               <img
                 src={item.image}
                 alt={item.title}
-                className="rounded-2xl shadow-lg object-cover w-[380px] h-[300px] md:h-[350px] z-10"
+                className="rounded-2xl shadow-lg object-cover w-[480px] h-[400px] md:h-[450px] z-10"
               />
             </div>
 
@@ -98,7 +122,7 @@ export default function Timeline() {
                   index % 2 === 0 ? "start md:pl-8" : "end md:pr-8"
                   }`}
               >
-                  <h3 className="text-2xl font-semibold text-[#E9D7AF] mb-2">
+                  <h3 className="text-4xl font-semibold text-[#E9D7AF] mb-2">
                   {item.title}
                   </h3>
                   <p className="text-gray-200 mb-3 max-w-md">
@@ -113,6 +137,15 @@ export default function Timeline() {
 
             {/* Dot marker */}
             <div className="absolute left-1/2 top-1/2 w-4 h-4 bg-[#E9D7AF] rounded-full transform -translate-x-1/2 -translate-y-1/2 z-20 hidden md:block" />
+
+            {/* Horizontal line connecting to dot */}
+            <div
+              className={`absolute top-1/2 w-[20%] h-[2px] bg-[#E9D7AF] hidden md:block -translate-y-1/2 z-0
+              ${index % 2 === 0 ? "right-1/2" : "left-1/2"}`}
+            />
+                
+
+
           </div>
         ))}
       </div>
