@@ -7,10 +7,10 @@ import duenLogo from "../assets/duen.webp"; // adjust path if needed
 const pathByLabel = {
   Home: "/",
   Team: "/team",
-  Photos: "/photos",
+  Timeline: "/timeline",
 };
 
-const menuLinks = ["Home", "Team", "Photos"];
+const menuLinks = ["Home", "Team", "Timeline"];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

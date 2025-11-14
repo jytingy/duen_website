@@ -1,10 +1,11 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import groupPhoto from "../assets/cohortpic.png";
+import groupPhoto from "../assets/duen_coverphoto.jpg";
 import boredSmiski from "../assets/smiskis/bored.png";
 import holdingSmiski from "../assets/smiskis/holding.png";
 import phoneSmiski from "../assets/smiskis/phone.png";
-import placeholder from '../assets/color_pick.png';
+import DemoVideo from "../components/DemoVideo";
+import Claris from "../assets/claris.jpg";
 
 function Home() {
   return (
@@ -15,7 +16,7 @@ function Home() {
       </div>
 
       {/* Main Page */}
-      <div className="flex flex-col min-h-screen overflow-x-hidden">
+      <div className="flex flex-col min-h-screen overflow-x-hidden select-none">
         {/* First Scroll */}
         <section
           className="flex flex-col md:flex-row w-full min-h-screen m-0 p-0"
@@ -34,6 +35,7 @@ function Home() {
                 <img
                 src={boredSmiski}
                 alt="Smiski bored"
+                draggable="false"
                 className="
                     relative 
                     top-10 left-6         /* small screens */
@@ -52,6 +54,7 @@ function Home() {
           <img
             src={groupPhoto}
             alt="Group photo"
+            draggable="false"
             className="absolute w-full h-full object-cover rounded-2xl
                       md:top-20 md:left-2
                       lg:top-16 lg:left-2"
@@ -113,13 +116,15 @@ function Home() {
           {/* Images section (optional, kept at bottom) */}
           <div className="flex flex-col items-center gap-0 mt-10">
             <img
-              src={placeholder}
+              src={Claris}
+              draggable="false"
               alt="Project prototype placeholder"
-              className="max-w-xs sm:max-w-sm md:max-w-md lg:w-[50rem] min-w-[300px] object-contain"
+              className="max-w-sm sm:max-w-sm md:max-w-md lg:max-w-md min-w-[300px] object-contain rounded-2xl"
             />
             <img
               src={holdingSmiski}
               alt="Smiski holding"
+              draggable="false"
               className="w-24 sm:w-32 md:w-40 lg:w-40 object-contain"
             />
           </div>
@@ -132,14 +137,14 @@ function Home() {
               Project Demo Video
             </h1>
             <p className="text-[#201224] text-center font-poppins text-base sm:text-lg font-normal leading-normal max-w-4xl">
-                Some video showing project
+                <DemoVideo/>
             </p>
-            <img src={phoneSmiski} className="sm:w-30 md:w-30 lg:w-30 object-contain mt-10"></img>
+            <img src={phoneSmiski} 
+              draggable="false"
+              className="sm:w-30 md:w-30 lg:w-30 object-contain mt-10">
+            </img>
         </div>
-        {/* End of third scroll */}
-
-        {/* Footer (no overlap) */}
-        
+        {/* End of third scroll */}        
           <Footer />
         
       </div>
