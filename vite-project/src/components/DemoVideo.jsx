@@ -1,36 +1,15 @@
- import React from "react";
  import YouTube from "react-youtube";
 
 
- class DemoVideo extends React.Component {
-    render() {
-      const options = {
-        height: '490',
-        width: '640',
-        playerVars: {
-          autoplay: 1,
-          controls: 1,
-        },
-      };
-  
-    return (
-<div className="w-full flex justify-center items-center p-4">
-  <div className="w-full aspect-video">
-    <YouTube
-      videoId="6biMWgD6_JY"
-      opts={{
-        playerVars: { autoplay: 1, controls: 1 }
-      }}
-    />
-  </div>
-</div>
-
-    )
-
-    }
-    _onReady(event) {
-      event.target.pauseVideo();
-    }
-  }
-
-  export default DemoVideo;
+export default function DemoVideo() {
+  return (
+    <div className="relative w-full pb-[56.25%]"> 
+      {/* 16:9 aspect ratio → 9/16 = 0.5625 */}
+      <YouTube
+        videoId="HNqKs65YCP8"
+        className="absolute top-0 left-0 w-full h-full"
+        iframeClassName="absolute top-0 left-0 w-full h-full"
+      />
+    </div>
+  );
+}

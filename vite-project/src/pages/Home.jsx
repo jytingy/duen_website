@@ -3,9 +3,8 @@ import Footer from "../components/Footer";
 import groupPhoto from "../assets/duen_coverphoto.jpg";
 import boredSmiski from "../assets/smiskis/bored.png";
 import holdingSmiski from "../assets/smiskis/holding.png";
-import phoneSmiski from "../assets/smiskis/phone.png";
 import DemoVideo from "../components/DemoVideo";
-import Claris from "../assets/claris.jpg";
+import Claris from "../assets/final_product.jpg";
 
 function Home() {
   return (
@@ -133,7 +132,16 @@ function Home() {
             <h1 className="text-[#201224] font-poppins text-2xl sm:text-4xl font-semibold leading-normal">
               Project Demo Video
             </h1>
-            <div>
+            <a
+            href="https://docs.google.com/document/d/1kySAzxsWkBg7qI30Eq67-O6Vma7mZgDqZLz36cTyFN4/edit?usp=sharing"
+            className="text-blue-500 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            Manual Page
+            </a>
+
+            <div className="w-full mx-auto aspect-video lg:max-w-2xl"> 
               <DemoVideo/>
             </div>
 
