@@ -133,7 +133,7 @@ function Home() {
               Project Demo Video
             </h1>
             <a
-            href="https://docs.google.com/document/d/1kySAzxsWkBg7qI30Eq67-O6Vma7mZgDqZLz36cTyFN4/edit?usp=sharing"
+            href="https://docs.google.com/document/d/10a2Ghjm3C03zbL3CIEsw324ftZc0iQDQXaKsP4vIcMk/edit?usp=sharing"
             className="text-blue-500 underline"
             target="_blank"
             rel="noopener noreferrer"
